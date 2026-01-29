@@ -113,14 +113,13 @@ public class Main {
 			session.persist(pere);
 			people.add(pere);
 
-			// Vehicles (persist in order, using subclass types)
 			Car toyota = new Car();
 			toyota.setBrand("Toyota");
 			toyota.setPrice(18000f);
 			toyota.setYear(2020);
 			toyota.setDoors(5);
 			toyota.setSeats(5);
-			toyota.setPerson(people.get(0)); // Anna
+			toyota.setPerson(people.get(0)); 
 			people.get(0).addVehicle(toyota);
 			session.persist(toyota);
 			vehicles.add(toyota);
@@ -131,7 +130,7 @@ public class Main {
 			ford.setYear(2019);
 			ford.setDoors(3);
 			ford.setSeats(4);
-			ford.setPerson(people.get(4)); // Maria (fifth person)
+			ford.setPerson(people.get(4)); 
 			people.get(4).addVehicle(ford);
 			session.persist(ford);
 			vehicles.add(ford);
@@ -142,7 +141,7 @@ public class Main {
 			cessna.setYear(2015);
 			cessna.setTailNumber(11111);
 			cessna.setAutopilot(true);
-			cessna.setPerson(people.get(3)); // Joan (fourth person)
+			cessna.setPerson(people.get(3)); 
 			people.get(3).addVehicle(cessna);
 			session.persist(cessna);
 			vehicles.add(cessna);
@@ -153,7 +152,7 @@ public class Main {
 			boeing.setYear(2010);
 			boeing.setTailNumber(22222);
 			boeing.setAutopilot(false);
-			boeing.setPerson(people.get(2)); // Clara (third person)
+			boeing.setPerson(people.get(2)); 
 			people.get(2).addVehicle(boeing);
 			session.persist(boeing);
 			vehicles.add(boeing);
@@ -163,7 +162,7 @@ public class Main {
 			yamaha.setPrice(9000f);
 			yamaha.setYear(2021);
 			yamaha.setHasSidecar(true);
-			yamaha.setPerson(people.get(1)); // Jordi (second person)
+			yamaha.setPerson(people.get(1)); 
 			people.get(1).addVehicle(yamaha);
 			session.persist(yamaha);
 			vehicles.add(yamaha);
@@ -173,7 +172,7 @@ public class Main {
 			harley.setPrice(20000f);
 			harley.setYear(2018);
 			harley.setHasSidecar(false);
-			harley.setPerson(people.get(5)); // Pere (sixth person)
+			harley.setPerson(people.get(5)); 
 			people.get(5).addVehicle(harley);
 			session.persist(harley);
 			vehicles.add(harley);
